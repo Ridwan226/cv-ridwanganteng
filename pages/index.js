@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import {Hero, Navbar, SectionBlogs} from '../components';
+import {Hero, Navbar, SectionBlogs, SectionService} from '../components';
 function Home() {
   return (
     <div>
@@ -10,6 +10,7 @@ function Home() {
       <Navbar />
       <Hero />
       <SectionBlogs />
+      <SectionService />
     </div>
   );
 }

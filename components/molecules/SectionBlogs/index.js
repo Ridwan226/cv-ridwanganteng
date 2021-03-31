@@ -32,9 +32,13 @@ export default SectionBlogs;
 
 const Containet = styled.div`
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   align-self: center;
+  @media (max-width: 670px) {
+    height: auto;
+    /* padding: 1rem; */
+  }
 `;
 
 const WrapperText = styled.div`
@@ -64,7 +68,6 @@ const Left = styled.div`
   z-index: 1; /* background-color: red; */
   @media (max-width: 670px) {
     display: none;
-    /* padding: 1rem; */
   }
 `;
 const Right = styled.div`
@@ -75,6 +78,5 @@ const Right = styled.div`
   flex-wrap: wrap;
   @media (max-width: 670px) {
     width: 100%;
-    /* padding: 1rem; */
   }
 `;

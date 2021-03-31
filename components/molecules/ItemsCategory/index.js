@@ -31,7 +31,8 @@ const Container = styled.div`
   &:hover {
     cursor: pointer;
     box-shadow: 0px 17px 16px -11px #ecb6d7;
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.1);
+    transition: all 0.5s 0s ease;
   }
 `;
 const WrepperText = styled.div`

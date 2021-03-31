@@ -1,3 +1,3 @@
 import Logo from './logo.svg';
-
-export {Logo};
+import IlWebDev from './IlWebDev.svg';
+export {Logo, IlWebDev};
