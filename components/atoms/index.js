@@ -1,3 +1,3 @@
 import Texttitle from './Texttitle';
-
-export {Texttitle};
+import Button from './Button';
+export {Texttitle, Button};

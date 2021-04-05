@@ -1,16 +1,32 @@
 import styled from 'styled-components';
-import {IlWebDev} from '../../../assets';
+import {IlWebDev, IlAppsDev, IlUiUx} from '../../../assets';
+import {Button} from '../../atoms';
 
-function ItemsService() {
+const ImageIl = ({title}) => {
+  switch (title) {
+    case 'Web Development':
+      return <IlWebDev />;
+    case 'Apps Development':
+      return <IlAppsDev />;
+    case 'Design and UI / UX':
+      return <IlUiUx />;
+    default:
+      return <IlWebDev />;
+  }
+  return <IlWebDev />;
+};
+
+function ItemsService({title, description}) {
   return (
     <Container>
-      <h1>Service</h1>
+      <h1>{title}</h1>
       <Containe>
-        <IlWebDev />
-        <Desc>
-          I studied and made a project with several technologies such as HTML,
-          CSS, PHP (Laravel, CI), JS (React Js)
-        </Desc>
+        <ImageIl title={title} />
+        <Desc>{description}</Desc>
+        <ButtonContainer>
+          <Button type="primary" title="Portofolio" />
+          <Button type="primary" title="Hire Now" />
+        </ButtonContainer>
       </Containe>
     </Container>
   );
@@ -23,7 +39,7 @@ const Container = styled.div`
   height: 562px;
   border-radius: 2rem;
   padding: 12px 20px;
-  box-shadow: 0px 10px 10px rgba(102, 213, 68, 0.38);
+  box-shadow: 0px 10px 10px rgba(129, 209, 255, 0.55);
   @media (max-width: 670px) {
     width: 100%;
     margin: 1rem;
@@ -32,6 +48,7 @@ const Container = styled.div`
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
+    color: #3c0473;
   }
 `;
 
@@ -46,4 +63,10 @@ const Desc = styled.h4`
   font-weight: 500;
   text-align: center;
   margin: 1rem;
+  color: #515151;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
 `;

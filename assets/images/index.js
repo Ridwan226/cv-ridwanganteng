@@ -1,3 +1,6 @@
 import Logo from './logo.svg';
 import IlWebDev from './IlWebDev.svg';
-export {Logo, IlWebDev};
+import IlAppsDev from './IlAppsDev.svg';
+import IlUiUx from './IlUiUx.svg';
+
+export {Logo, IlUiUx, IlWebDev, IlAppsDev};

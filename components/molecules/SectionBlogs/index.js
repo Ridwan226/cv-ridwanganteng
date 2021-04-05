@@ -1,9 +1,19 @@
+import Lottie from 'react-lottie';
 import styled from 'styled-components';
-import {Texttitle} from '../../atoms';
-import {Player, Controls} from '@lottiefiles/react-lottie-player';
-import {AnimBlogs} from '../../../assets';
 import {ItemsCategory} from '..';
+import {AnimBlogs} from '../../../assets';
+import {Texttitle} from '../../atoms';
+
 function SectionBlogs() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: AnimBlogs,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
   return (
     <Containet>
       <WrapperText>
@@ -11,11 +21,7 @@ function SectionBlogs() {
       </WrapperText>
       <WrapperContaine>
         <Left>
-          <Player
-            autoplay
-            loop
-            src={AnimBlogs}
-            style={{height: '500px', width: '500px'}}></Player>
+          <Lottie options={defaultOptions} width={400} />
         </Left>
         <Right>
           <ItemsCategory image="https://placeimg.com/640/480/any" />

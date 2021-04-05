@@ -1,6 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
-import {Hero, Navbar, SectionBlogs, SectionService} from '../components';
+import {
+  Footer,
+  Hero,
+  Navbar,
+  SectionBlogs,
+  SectionService,
+} from '../components';
+
 function Home() {
   return (
     <div>
@@ -11,6 +18,7 @@ function Home() {
       <Hero />
       <SectionBlogs />
       <SectionService />
+      <Footer />
     </div>
   );
 }

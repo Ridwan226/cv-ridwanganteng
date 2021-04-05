@@ -1,15 +1,18 @@
 import styled from 'styled-components';
+import {Button} from '../../atoms';
 function HeroText() {
   return (
     <Container>
-      <h5>Online Education System</h5>
-      <h1>Learn</h1>
-      <h1>Anything</h1>
-      <h1>Anytime</h1>
-      <h1>Anyware</h1>
+      <h5>
+        Saya selalu memberikan upaya terbaik untuk setiap proyek yang saya
+        lakukan. Serta saya memberikan solusi dengan pemikiran kreatif saya.
+      </h5>
+      <h1>GRAPHIC</h1>
+      <h1>AND</h1>
+      <h1>Web / Apps</h1>
       <ButtonContainer>
-        <button className="readmore">Read More</button>
-        <button>7 Day Free</button>
+        <Button title="Portofolio" />
+        <Button type="primary" title="Educations" />
       </ButtonContainer>
     </Container>
   );
@@ -18,24 +21,6 @@ function HeroText() {
 export default HeroText;
 const ButtonContainer = styled.div`
   margin-top: 2rem;
-
-  button {
-    background-color: #81d1ff;
-    border: none;
-    padding: 0.9rem 1.1rem;
-    color: #fff;
-    border-radius: 1rem;
-    box-shadow: 0px 15px 24px -7px #7781d4;
-    transition: all 0.4s ease-in-out;
-    margin: 0.5rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-
-    &:hover {
-      box-shadow: 0px 17px 10px -11px #7781d4;
-      transform: translateY(-5);
-    }
-  }
 
   .readmore {
     color: #7781d4;

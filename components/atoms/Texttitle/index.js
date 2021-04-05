@@ -12,4 +12,5 @@ export default Texttitle;
 const TitleText = styled.h1`
   font-size: 2rem;
   font-weight: 500;
+  color: #3c0473;
 `;

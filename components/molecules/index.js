@@ -3,4 +3,6 @@ import Hero from './Hero';
 import SectionBlogs from './SectionBlogs';
 import ItemsCategory from './ItemsCategory';
 import SectionService from './SectionService';
-export {Navbar, Hero, SectionBlogs, ItemsCategory, SectionService};
+import Footer from './Footer';
+
+export {Navbar, Hero, SectionBlogs, ItemsCategory, SectionService, Footer};
