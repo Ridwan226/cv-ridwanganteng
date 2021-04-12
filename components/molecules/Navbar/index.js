@@ -3,6 +3,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import {Logo} from '../../../assets';
+import Link from 'next/link';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,21 @@ function Navbar() {
         </Hamburger>
         <Menu isOpen={isOpen}>
           <LinkWrapper>
-            <MenuLink href="">Home</MenuLink>
-            <MenuLink href="">Portofolio</MenuLink>
-            <MenuLink href="">Educations</MenuLink>
-            <MenuLink href="">Blog</MenuLink>
+            <Link href="/" passHref>
+              <MenuLink>Home</MenuLink>
+            </Link>
+            <Link href="/">
+              <MenuLink>Portofolio</MenuLink>
+            </Link>
+
+            <Link href="/">
+              <MenuLink>Educations</MenuLink>
+            </Link>
+
+            <Link href="/blog">
+              <MenuLink>Blogs</MenuLink>
+            </Link>
+
             <Button>Hear Now</Button>
           </LinkWrapper>
         </Menu>
@@ -106,6 +118,7 @@ const MenuLink = styled.a`
   &:hover {
     color: #7781d4;
     background: #e7e9fc;
+    cursor: pointer;
   }
 `;
 
